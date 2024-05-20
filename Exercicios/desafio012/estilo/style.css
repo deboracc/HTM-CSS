@@ -22,6 +22,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    text-decoration: none;
 }
 
 html, body {
@@ -94,6 +95,9 @@ section.normal {
 section.imagem {
     background-color: #73a6cd;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.353);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
@@ -101,34 +105,52 @@ section.imagem > p {
     padding: 5px;
     width: 400px;
     background-color: #228bdb96;
+    text-shadow: 1px 1px 0px black;
 }
 
 section#img01 {
-    background-image: url('../imagens/pexels-yankrukov-8612914.jpg');
+    background-image: url('../imagens/pexels-bulat-5686923.jpg');
+    background-position: center center;
 }
 
 section#img02 {
     background-image: url('../imagens/pexels-yankrukov-8612914.jpg');
+    background-position: center center;
+    margin-bottom: 15px;
 }
 
 aside {
     background-color:var(--cor3);
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    text-align: justify;
     line-height: 4em;
-    padding-left: 30px;
+    padding: 20px;
     border-radius: 20px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
     font-family: var(--fonte3);
+    margin: auto;
+    width: 90vh;
 }
 
 aside > h1 {
     color: var(--cor5);
     font-size: 3vw;
+    text-align: center;
 }
 
 aside > p {
     font-size: 2vw;
+}
+
+p.canal {
+    text-align: center;
+}
+
+p.canal:hover {
+    background-color: var(--cor4);
+    border-radius: 3px;
+    transition-duration: 0.5s;
+    padding: 3px;
+
 }
 
 footer {
@@ -136,4 +158,5 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
+    margin-top: 15px;
 }
