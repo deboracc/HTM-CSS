@@ -1,5 +1,24 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Paytone+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+
+:root {
+    --cor0: #AEECEF;
+    --cor1: #73a6cd;
+    --cor2: #228bdb96;
+    --cor3: #FFF275;
+    --cor4: #FF8C42;
+    --cor5: #C305FA;
+
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Paytone One", sans-serif;
+    --fonte3: "Itim", cursive;
+
+} 
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,6 +27,7 @@
 html, body {
     min-height: 100vh;
     background-color: #AEECEF;
+    font-family: var(--fonte1);
 }
 
 header {
@@ -19,6 +39,8 @@ header {
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 7vw;
 }
 
 header > p {
@@ -58,8 +80,10 @@ nav > a:hover {
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
+    line-height: 3em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 2vw;
 }
 
 section.normal {
@@ -73,8 +97,38 @@ section.imagem {
 }
 
 section.imagem > p {
+    display: inline-block;
+    padding: 5px;
     width: 400px;
     background-color: #228bdb96;
+}
+
+section#img01 {
+    background-image: url('../imagens/pexels-yankrukov-8612914.jpg');
+}
+
+section#img02 {
+    background-image: url('../imagens/pexels-yankrukov-8612914.jpg');
+}
+
+aside {
+    background-color:var(--cor3);
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 4em;
+    padding-left: 30px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
+    font-family: var(--fonte3);
+}
+
+aside > h1 {
+    color: var(--cor5);
+    font-size: 3vw;
+}
+
+aside > p {
+    font-size: 2vw;
 }
 
 footer {
