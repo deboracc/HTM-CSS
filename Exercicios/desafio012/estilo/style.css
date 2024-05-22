@@ -41,7 +41,7 @@ header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--fonte2);
-    font-size: 7vw;
+    font-size: 8vw;
 }
 
 header > p {
@@ -78,13 +78,20 @@ nav > a:hover {
     color: #FFF275;
 }
 
+a.externa::after {
+    content: '🔗';
+}
+
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 3em;
+    padding-right: 30px;
     padding-left: 30px;
     font-family: var(--fonte3);
     font-size: 2vw;
+    text-align: justify;
+
 }
 
 section.normal {
@@ -102,7 +109,7 @@ section.imagem {
 
 section.imagem > p {
     display: inline-block;
-    padding: 5px;
+    padding: 10px;
     width: 400px;
     background-color: #228bdb96;
     text-shadow: 1px 1px 0px black;
