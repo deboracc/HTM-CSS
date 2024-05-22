@@ -85,11 +85,11 @@ a.externa::after {
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 3em;
+    line-height: 2em;
     padding-right: 30px;
     padding-left: 30px;
     font-family: var(--fonte3);
-    font-size: 2vw;
+    font-size: 2.5vw;
     text-align: justify;
 
 }
@@ -129,7 +129,7 @@ section#img02 {
 aside {
     background-color:var(--cor3);
     text-align: justify;
-    line-height: 4em;
+    line-height: 3em;
     padding: 20px;
     border-radius: 20px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.281);
