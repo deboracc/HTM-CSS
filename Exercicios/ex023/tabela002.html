@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th {
@@ -19,9 +20,30 @@
             padding: 10px;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightblue;
+        }
+
         thead, tfoot {
             background-color: gray;
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
         }
 
         td.num {
@@ -35,6 +57,7 @@
     <!--
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+           CAPTION
            THEAD
               TR, TD, TH
            TBODY
@@ -43,10 +66,11 @@
               TR, TD, TH
     -->
     <table>
+        <caption>População dos distritos de Portugal</caption>
         <thead>
             <tr>
-                <th>Distrito</th>
-                <th>População</th>
+                <th scope="col">Distrito</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -133,10 +157,21 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>10 467 366</strong></td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam dignissimos iusto autem eum, optio iure alias. Mollitia sed earum minima, ipsam, voluptatem illo tenetur omnis quas suscipit vel eveniet atque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora facere numquam placeat laudantium a totam, velit, sequi provident recusandae itaque alias hic voluptas ex natus. Ullam excepturi dolorem placeat voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam fuga fugiat unde voluptates at voluptas aspernatur vitae voluptatem, aliquam vero eligendi ipsum labore maiores doloribus eius adipisci natus omnis quis.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam dignissimos iusto autem eum, optio iure alias. Mollitia sed earum minima, ipsam, voluptatem illo tenetur omnis quas suscipit vel eveniet atque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora facere numquam placeat laudantium a totam, velit, sequi provident recusandae itaque alias hic voluptas ex natus. Ullam excepturi dolorem placeat voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam fuga fugiat unde voluptates at voluptas aspernatur vitae voluptatem, aliquam vero eligendi ipsum labore maiores doloribus eius adipisci natus omnis quis.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam dignissimos iusto autem eum, optio iure alias. Mollitia sed earum minima, ipsam, voluptatem illo tenetur omnis quas suscipit vel eveniet atque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora facere numquam placeat laudantium a totam, velit, sequi provident recusandae itaque alias hic voluptas ex natus. Ullam excepturi dolorem placeat voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam fuga fugiat unde voluptates at voluptas aspernatur vitae voluptatem, aliquam vero eligendi ipsum labore maiores doloribus eius adipisci natus omnis quis.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam dignissimos iusto autem eum, optio iure alias. Mollitia sed earum minima, ipsam, voluptatem illo tenetur omnis quas suscipit vel eveniet atque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora facere numquam placeat laudantium a totam, velit, sequi provident recusandae itaque alias hic voluptas ex natus. Ullam excepturi dolorem placeat voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam fuga fugiat unde voluptates at voluptas aspernatur vitae voluptatem, aliquam vero eligendi ipsum labore maiores doloribus eius adipisci natus omnis quis.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam dignissimos iusto autem eum, optio iure alias. Mollitia sed earum minima, ipsam, voluptatem illo tenetur omnis quas suscipit vel eveniet atque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora facere numquam placeat laudantium a totam, velit, sequi provident recusandae itaque alias hic voluptas ex natus. Ullam excepturi dolorem placeat voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam fuga fugiat unde voluptates at voluptas aspernatur vitae voluptatem, aliquam vero eligendi ipsum labore maiores doloribus eius adipisci natus omnis quis.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam dignissimos iusto autem eum, optio iure alias. Mollitia sed earum minima, ipsam, voluptatem illo tenetur omnis quas suscipit vel eveniet atque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora facere numquam placeat laudantium a totam, velit, sequi provident recusandae itaque alias hic voluptas ex natus. Ullam excepturi dolorem placeat voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam fuga fugiat unde voluptates at voluptas aspernatur vitae voluptatem, aliquam vero eligendi ipsum labore maiores doloribus eius adipisci natus omnis quis.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam dignissimos iusto autem eum, optio iure alias. Mollitia sed earum minima, ipsam, voluptatem illo tenetur omnis quas suscipit vel eveniet atque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora facere numquam placeat laudantium a totam, velit, sequi provident recusandae itaque alias hic voluptas ex natus. Ullam excepturi dolorem placeat voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam fuga fugiat unde voluptates at voluptas aspernatur vitae voluptatem, aliquam vero eligendi ipsum labore maiores doloribus eius adipisci natus omnis quis.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam dignissimos iusto autem eum, optio iure alias. Mollitia sed earum minima, ipsam, voluptatem illo tenetur omnis quas suscipit vel eveniet atque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora facere numquam placeat laudantium a totam, velit, sequi provident recusandae itaque alias hic voluptas ex natus. Ullam excepturi dolorem placeat voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam fuga fugiat unde voluptates at voluptas aspernatur vitae voluptatem, aliquam vero eligendi ipsum labore maiores doloribus eius adipisci natus omnis quis.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam dignissimos iusto autem eum, optio iure alias. Mollitia sed earum minima, ipsam, voluptatem illo tenetur omnis quas suscipit vel eveniet atque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora facere numquam placeat laudantium a totam, velit, sequi provident recusandae itaque alias hic voluptas ex natus. Ullam excepturi dolorem placeat voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam fuga fugiat unde voluptates at voluptas aspernatur vitae voluptatem, aliquam vero eligendi ipsum labore maiores doloribus eius adipisci natus omnis quis.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam dignissimos iusto autem eum, optio iure alias. Mollitia sed earum minima, ipsam, voluptatem illo tenetur omnis quas suscipit vel eveniet atque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora facere numquam placeat laudantium a totam, velit, sequi provident recusandae itaque alias hic voluptas ex natus. Ullam excepturi dolorem placeat voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam fuga fugiat unde voluptates at voluptas aspernatur vitae voluptatem, aliquam vero eligendi ipsum labore maiores doloribus eius adipisci natus omnis quis.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam dignissimos iusto autem eum, optio iure alias. Mollitia sed earum minima, ipsam, voluptatem illo tenetur omnis quas suscipit vel eveniet atque. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora facere numquam placeat laudantium a totam, velit, sequi provident recusandae itaque alias hic voluptas ex natus. Ullam excepturi dolorem placeat voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam fuga fugiat unde voluptates at voluptas aspernatur vitae voluptatem, aliquam vero eligendi ipsum labore maiores doloribus eius adipisci natus omnis quis.</p>
 </body>
 </html>
